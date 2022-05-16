@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OU Walking Club</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="container">
+      <div class="navigation-bar">
+        <a>OU Walking Club</a>
+        <div class="navigation-bar-buttons">
+          <a href="index.html">Homepage</a>
+          <a href="walk-editor.html">Create a new Walk</a>
+          <a href="event-editor.html">Create a new Event</a>
+          <a href="announcement-editor.html">Create a new Announcement</a>
+        </div>
+      </div>
+      <form class="form-group">
+        <div>
+            <label for="walk_name">Walk Name</label>
+            <input type="text" id="walk_name" required />
+        </div>
+        <div>
+            <label for="walk_date">Walk Date</label>
+            <input type="date" id="walk_date" required />
+        </div>
+        <div>
+            <label for="walk_start_time">Start Time</label>
+            <input type="time" id="walk_start_time" required />
+        </div>
+        <div>
+            <label for="walk_end_time">End Time</label>
+            <input type="time" id="walk_end_time" required />
+        </div>
+        <div>
+            <label for="meeting_point">Meeting Point</label>
+            <input type="text" id="meeting_point" required />
+        </div>
+        <div>
+            <label for="distance_in_kilometres">Distance in kilometres</label>
+            <input type="text" id="distance_in_kilometres" required />
+        </div>
+        <div>
+            <label for="name_of_leaders">Name of leaders</label>
+            <input type="text" id="name_of_leaders" required />
+        </div>
+        <div>
+            <label for="status">Distance in kilometres</label>
+            <select id="status">
+                <option>Proposed</option>
+                <option>Approved</option>
+                <option>Rejected</option>
+            </select>
+        </div>
+        <div class="form-group-two-columns">
+            <label for="comments">Comments</label>
+            <textarea id="comments"></textarea>
+        </div>
+        <div class="form-group-two-columns">
+            <input type="submit" value="Save/Create"/>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

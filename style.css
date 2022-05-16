@@ -1,0 +1,100 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  max-width: 1024px;
+}
+
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border: 1px solid black;
+  padding: 0.3em;
+}
+
+.navigation-bar-buttons {
+  display: flex;
+  align-items: stretch;
+  margin-left: auto;
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding: 0.2em;
+}
+
+.navigation-bar-buttons > * {
+  margin-left: 0.5em;
+}
+
+.homepage {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2em;
+  border: 1px solid black;
+  margin-top: 1em;
+  padding: 0.5em;
+  justify-content: space-around;
+}
+
+.homepage-card {
+  border: 1px solid black;
+  padding: 0.2em;
+}
+
+.homepage-card-title {
+  margin-bottom: 0.2em;
+  font-weight: bold;
+}
+
+.homepage-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.2em;
+}
+
+.homepage-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 0.3em;
+}
+
+.homepage-list li p {
+  padding: 0;
+  margin: 0;
+}
+
+.homepage-list li svg {
+  cursor: pointer;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2em;
+  border: 1px solid black;
+  padding: 0.3em;
+  margin-top: 1em;
+}
+
+.form-group div {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3em;
+}
+
+.form-group div label {
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.form-group div.form-group-two-columns {
+  grid-column: span 2;
+}
+
+.form-group div input,
+.form-group div select,
+.form-group div textarea {
+  border: 2px solid black;
+}
