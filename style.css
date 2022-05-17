@@ -42,6 +42,8 @@
 }
 
 .homepage-card-title {
+  display: flex;
+  justify-content: center;
   margin-bottom: 0.2em;
   font-weight: bold;
 }
@@ -60,9 +62,17 @@
   padding: 0.3em;
 }
 
+.homepage-list li.vertical-information-stack {
+  flex-direction: column;
+}
+
 .homepage-list li p {
   padding: 0;
   margin: 0;
+}
+
+.homepage-list li.vertical-information-stack p {
+  margin-bottom: 0.5em;
 }
 
 .homepage-list li .icon-container {
@@ -111,4 +121,26 @@
 .form-group div input[type="submit"] {
   max-width: 50%;
   text-align: center;
+}
+
+@media only screen and (max-width: 380px){
+  .homepage {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .navigation-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navigation-bar .navigation-bar-buttons {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+
+  .form-group {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .form-group div.form-group-two-columns {
+    grid-column: span 1;
+  }
 }
