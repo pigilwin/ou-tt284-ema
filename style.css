@@ -75,7 +75,14 @@
   margin-bottom: 0.5em;
 }
 
-.homepage-list li .icon-container {
+.homepage-list li.vertical-information-stack span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.homepage-list li .icon-container,
+.homepage-list li.vertical-information-stack .icon-container {
   display: flex;
   flex-direction: row;
 }
