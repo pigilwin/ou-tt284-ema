@@ -65,7 +65,12 @@
   margin: 0;
 }
 
-.homepage-list li svg {
+.homepage-list li .icon-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.homepage-list li .icon-container svg {
   cursor: pointer;
 }
 
@@ -93,8 +98,17 @@
   grid-column: span 2;
 }
 
+.form-group div.form-group-align-center {
+  align-items: center;
+}
+
 .form-group div input,
 .form-group div select,
 .form-group div textarea {
   border: 2px solid black;
+}
+
+.form-group div input[type="submit"] {
+  max-width: 50%;
+  text-align: center;
 }

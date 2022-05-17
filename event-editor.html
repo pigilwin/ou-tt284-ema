@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>OU Walking Club</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="container">
+            <div class="navigation-bar">
+                <a>OU Walking Club</a>
+                <div class="navigation-bar-buttons">
+                    <a href="index.html">Homepage</a>
+                    <a href="walk-editor.html">Create a new Walk</a>
+                    <a href="event-editor.html">Create a new Event</a>
+                    <a href="news-item-editor.html">Create a new News Item</a>
+                    <a href="announcement-editor.html">Create a new Announcement</a>
+                </div>
+            </div>
+            <form class="form-group">
+                <div>
+                    <label for="event_name">Event Name</label>
+                    <input type="text" id="event_name" required />
+                </div>
+                <div>
+                    <label for="event_date">Event Date</label>
+                    <input type="date" id="event_date" required />
+                </div>
+                <div>
+                    <label for="event_type">Event Type</label>
+                    <select id="event_type">
+                        <option>Social</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="event_time">Event Time</label>
+                    <input type="time" id="event_time" required />
+                </div>
+                <div>
+                    <label for="event_location">Event Location</label>
+                    <input type="text" id="event_location" required />
+                </div>
+                <div class="form-group-two-columns form-group-align-center">
+                    <input type="submit" value="Save/Create"/>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

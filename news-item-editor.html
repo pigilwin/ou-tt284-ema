@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OU Walking Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+    <div class="navigation-bar">
+        <a>OU Walking Club</a>
+        <div class="navigation-bar-buttons">
+            <a href="index.html">Homepage</a>
+            <a href="walk-editor.html">Create a new Walk</a>
+            <a href="event-editor.html">Create a new Event</a>
+            <a href="news-item-editor.html">Create a new News Item</a>
+            <a href="announcement-editor.html">Create a new Announcement</a>
+        </div>
+    </div>
+    <form class="form-group">
+        <div class="form-group-two-columns">
+            <label for="news_content">News content</label>
+            <textarea maxlength="300" id="news_content" required></textarea>
+        </div>
+        <div>
+            <label for="news_start_date">News Start Date</label>
+            <input type="date" id="news_start_date" required/>
+        </div>
+        <div>
+            <label for="news_end_date">News End Date</label>
+            <input type="date" id="news_end_date" required/>
+        </div>
+        <div class="form-group-two-columns form-group-align-center">
+            <input type="submit" value="Create"/>
+        </div>
+    </form>
+</main>
+</body>
+</html>

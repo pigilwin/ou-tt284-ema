@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>OU Walking Club</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="container">
+            <div class="navigation-bar">
+                <a>OU Walking Club</a>
+                <div class="navigation-bar-buttons">
+                    <a href="index.html">Homepage</a>
+                    <a href="walk-editor.html">Create a new Walk</a>
+                    <a href="event-editor.html">Create a new Event</a>
+                    <a href="news-item-editor.html">Create a new News Item</a>
+                    <a href="announcement-editor.html">Create a new Announcement</a>
+                </div>
+            </div>
+            <form class="form-group">
+                <div>
+                    <label for="member_name">Member Name</label>
+                    <input type="text" id="member_name" required />
+                </div>
+                <div>
+                    <label for="member_email">Member Email</label>
+                    <input type="email" id="member_email" required />
+                </div>
+                <div>
+                    <label for="member_phone_number">Member Phone number</label>
+                    <input type="text" id="member_phone_number" required />
+                </div>
+                <div>
+                    <label for="member_password">Member Password (Not Displayed)</label>
+                    <input type="password" id="member_password" required />
+                </div>
+                <div>
+                    <label for="member_preferred_payment_method">Member Payment Method</label>
+                    <select id="member_preferred_payment_method">
+                        <option value="CARD">Card</option>
+                        <option value="CASH">Cash</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="member_receive_announcement_emails">Member would like to receive announcement emails?</label>
+                    <select id="member_receive_announcement_emails">
+                        <option value="Y">Yes</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="member_active">Member Active</label>
+                    <select id="member_active">
+                        <option value="Y">Active</option>
+                        <option value="N">Inactive</option>
+                    </select>
+                </div>
+                <div class="form-group-two-columns form-group-align-center">
+                    <input type="submit" value="Save"/>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
