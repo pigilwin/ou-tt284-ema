@@ -100,3 +100,25 @@ body {
   max-width: 50%;
   text-align: center;
 }
+
+@media only screen and (max-width: 380px){
+  .navigation-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navigation-bar .navigation-bar-buttons {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+  .navigation-bar .navigation-bar-buttons > * {
+    margin-top: 0.5em;
+  }
+
+  .form-group {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .form-group div.form-group-two-columns {
+    grid-column: span 1;
+  }
+}
