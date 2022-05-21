@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>OU Walking Club - Create a new walk</title>
+        <link rel="stylesheet" href="q2b.css">
+    </head>
+<body>
+<main class="container">
+    <div class="navigation-bar card">
+        <a>OU Walking Club</a>
+        <div class="navigation-bar-buttons">
+            <a class="button" href="index.html">Homepage</a>
+            <a class="button" href="walk-editor.html">Create a new Walk</a>
+            <a class="button" href="event-editor.html">Create a new Event</a>
+            <a class="button" href="news-item-editor.html">Create a new News Item</a>
+            <a class="button" href="announcement-editor.html">Create a new Announcement</a>
+        </div>
+    </div>
+    <form class="form-group card" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="get">
+        <div>
+            <label for="walk_name">Walk Name</label>
+            <input class="form-control" type="text" id="walk_name" name="walk_name" aria-label="Walk Name" required/>
+        </div>
+        <div>
+            <label for="walk_date">Walk Date</label>
+            <input class="form-control" type="date" id="walk_date" name="walk_date" aria-label="Walk Date" required/>
+        </div>
+        <div>
+            <label for="walk_start_time">Start Time</label>
+            <input class="form-control" type="time" id="walk_start_time" name="walk_start_time" aria-label="Start Time" required/>
+        </div>
+        <div>
+            <label for="walk_end_time">End Time</label>
+            <input class="form-control" type="time" id="walk_end_time" name="walk_end_time" aria-label="End Time" required/>
+        </div>
+        <div>
+            <label for="meeting_point">Meeting Point</label>
+            <input class="form-control" type="text" id="meeting_point" name="meeting_point" aria-label="Meeting Point" required/>
+        </div>
+        <div>
+            <label for="distance_in_kilometres">Distance in kilometres</label>
+            <input class="form-control" type="text" name="distance_in_kilometres" id="distance_in_kilometres" aria-label="Distance in kilometres" required/>
+        </div>
+        <div>
+            <label for="name_of_leaders">Name of leaders</label>
+            <input class="form-control" type="text" name="name_of_leaders" id="name_of_leaders" aria-label="Name of leaders" required/>
+        </div>
+        <div>
+            <label for="status">Status</label>
+            <select class="form-control" aria-label="Status" name="status" id="status">
+                <option>Proposed</option>
+                <option>Approved</option>
+                <option>Rejected</option>
+            </select>
+        </div>
+        <div class="form-group-two-columns">
+            <label for="comments">Comments</label>
+            <textarea class="form-control" aria-label="Comments" name="comments" id="comments"></textarea>
+        </div>
+        <div class="form-group-two-columns form-group-align-center">
+            <input type="submit" class="button" aria-label="Create walk" value="Save/Create"/>
+        </div>
+        <input type="hidden" name="sessionID" id="sessionID" value="abcd1234-ee56-ff78-9090"/>
+    </form>
+</main>
+</body>
+</html>
